@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import confetti from "canvas-confetti";
-import { Camera, Heart, ArrowLeft, PartyPopper, RefreshCw } from "lucide-react";
+import { Camera, Heart, ArrowLeft, PartyPopper, RefreshCw, Volume2, VolumeX } from "lucide-react";
 
 export default function Home() {
   const [photoSrc, setPhotoSrc] = useState<string>("/pics/pic10.jpeg");
@@ -112,10 +112,31 @@ export default function Home() {
 
   const CORRECT_PASSCODE = "0808";
 
+  // Audio state
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+
+  const toggleMusic = () => {
+    if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+      }).catch((err) => {
+        console.log("Audio play error:", err);
+      });
+    }
+  };
+
   const triggerUnlock = () => {
     setIsUnlocked(true);
     setPage2State("ask");
     fireCelebration();
+    if (audioRef.current && !isPlaying) {
+      audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+    }
   };
 
   const handleKeyPress = (key: string) => {
@@ -221,6 +242,33 @@ export default function Home() {
       className="min-h-screen w-full transition-all duration-700 bg-cover bg-center bg-fixed bg-no-repeat"
       style={{ backgroundImage: currentBg }}
     >
+      {/* Background Audio */}
+      <audio ref={audioRef} src="/song.mp3" loop preload="auto" />
+
+      {/* Floating Music Toggle Button */}
+      <button
+        onClick={toggleMusic}
+        className="fixed top-4 right-4 z-50 flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 hover:bg-white text-pink-700 shadow-md hover:shadow-lg backdrop-blur-md border border-pink-200/80 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer select-none"
+        title={isPlaying ? "Mute music" : "Play music"}
+        aria-label="Toggle music"
+      >
+        {isPlaying ? (
+          <>
+            <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-pink-600 animate-pulse" />
+            <span className="text-xs font-medium tracking-wide text-pink-700">Playing</span>
+            <span className="flex space-x-0.5 items-end h-3 ml-0.5">
+              <span className="w-0.5 bg-pink-500 animate-[bounce_1s_infinite_100ms] h-full rounded-full"></span>
+              <span className="w-0.5 bg-pink-500 animate-[bounce_1s_infinite_300ms] h-2 rounded-full"></span>
+              <span className="w-0.5 bg-pink-500 animate-[bounce_1s_infinite_200ms] h-3 rounded-full"></span>
+            </span>
+          </>
+        ) : (
+          <>
+            <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
+            <span className="text-xs font-medium tracking-wide text-gray-600">Music Off</span>
+          </>
+        )}
+      </button>
       {!isUnlocked ? (
         /* ================= SCREEN 1: LOCK SCREEN (Striped bg.png) ================= */
         <main className="min-h-screen w-full flex flex-col items-center justify-between px-4 sm:px-8 md:px-12 lg:px-14 py-4 sm:py-6 overflow-x-hidden relative animate-fadeIn">
