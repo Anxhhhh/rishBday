@@ -116,6 +116,41 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
+  // Play sound by default on load / first user interaction
+  useEffect(() => {
+    const startAudio = () => {
+      if (audioRef.current && audioRef.current.paused) {
+        audioRef.current
+          .play()
+          .then(() => setIsPlaying(true))
+          .catch(() => {
+            // Autoplay blocked by browser policy until user interacts
+          });
+      }
+    };
+
+    // Attempt playback immediately on load
+    startAudio();
+
+    // Start on first touch / click / keypress anywhere if initial autoplay was blocked
+    const handleFirstGesture = () => {
+      startAudio();
+      window.removeEventListener("click", handleFirstGesture);
+      window.removeEventListener("touchstart", handleFirstGesture);
+      window.removeEventListener("keydown", handleFirstGesture);
+    };
+
+    window.addEventListener("click", handleFirstGesture);
+    window.addEventListener("touchstart", handleFirstGesture);
+    window.addEventListener("keydown", handleFirstGesture);
+
+    return () => {
+      window.removeEventListener("click", handleFirstGesture);
+      window.removeEventListener("touchstart", handleFirstGesture);
+      window.removeEventListener("keydown", handleFirstGesture);
+    };
+  }, []);
+
   const toggleMusic = () => {
     if (!audioRef.current) return;
     if (isPlaying) {
@@ -243,7 +278,7 @@ export default function Home() {
       style={{ backgroundImage: currentBg }}
     >
       {/* Background Audio */}
-      <audio ref={audioRef} src="/song.mp3" loop preload="auto" />
+      <audio ref={audioRef} src="/song.mp3" autoPlay loop preload="auto" />
 
       {/* Floating Music Toggle Button */}
       <button
