@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sparkleCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#fef08a" />
+      <stop offset="65%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glint" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <g filter="drop-shadow(0 0 6px rgba(250, 204, 21, 0.75))">
+    <!-- Outer Glow -->
+    <circle cx="50" cy="50" r="30" fill="url(#sparkleCore)" opacity="0.4" />
+    
+    <!-- Primary 4-pointed Star -->
+    <path d="M 50,0 Q 50,42 8,50 Q 50,50 50,100 Q 50,58 92,50 Q 50,50 50,0 Z" fill="#facc15" stroke="#ffffff" stroke-width="1" />
+    
+    <!-- Diagonal secondary 4-pointed Star -->
+    <path d="M 50,15 Q 50,45 20,50 Q 50,50 50,85 Q 50,55 80,50 Q 50,50 50,15 Z" fill="#fde047" opacity="0.8" />
+    
+    <!-- Brilliant Center Glint -->
+    <circle cx="50" cy="50" r="10" fill="url(#glint)" />
+    <circle cx="50" cy="50" r="4" fill="#ffffff" />
+  </g>
+</svg>
+

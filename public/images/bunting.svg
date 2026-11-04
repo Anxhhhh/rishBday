@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="100%" preserveAspectRatio="none">
+  <!-- Garland string 1 -->
+  <path d="M 0,15 Q 300,55 600,20 Q 900,55 1200,15" stroke="#8b0000" stroke-width="2.5" fill="none" />
+  
+  <!-- Red Flag Pennants on String 1 -->
+  <!-- Arc 1 (0 to 600) -->
+  <polygon points="20,17 65,19 42,75" fill="#c9182b" />
+  <polygon points="75,20 120,24 97,80" fill="#dc2626" />
+  <polygon points="130,25 175,30 152,86" fill="#b91c1c" />
+  <polygon points="185,31 230,36 207,90" fill="#dc2626" />
+  <polygon points="240,37 285,41 262,94" fill="#c9182b" />
+  <polygon points="295,42 340,43 317,95" fill="#dc2626" />
+  <polygon points="350,43 395,41 372,94" fill="#b91c1c" />
+  <polygon points="405,40 450,36 427,90" fill="#c9182b" />
+  <polygon points="460,35 505,29 482,84" fill="#dc2626" />
+  <polygon points="515,28 560,23 537,78" fill="#b91c1c" />
+  <polygon points="570,22 615,19 592,74" fill="#c9182b" />
+
+  <!-- Arc 2 (600 to 1200) -->
+  <polygon points="625,19 670,24 647,80" fill="#dc2626" />
+  <polygon points="680,25 725,30 702,86" fill="#b91c1c" />
+  <polygon points="735,31 780,36 757,91" fill="#c9182b" />
+  <polygon points="790,37 835,41 812,94" fill="#dc2626" />
+  <polygon points="845,42 890,43 867,95" fill="#b91c1c" />
+  <polygon points="900,43 945,41 922,94" fill="#dc2626" />
+  <polygon points="955,40 1000,35 977,89" fill="#c9182b" />
+  <polygon points="1010,34 1055,29 1032,83" fill="#dc2626" />
+  <polygon points="1065,28 1110,23 1087,77" fill="#b91c1c" />
+  <polygon points="1120,22 1165,18 1142,72" fill="#c9182b" />
+  <polygon points="1175,17 1215,15 1195,68" fill="#dc2626" />
+</svg>
+

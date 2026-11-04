@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="100%" height="100%">
+  <defs>
+    <filter id="sticker-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#4a044e" flood-opacity="0.18" />
+    </filter>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <linearGradient id="cakeCream" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1f2" />
+      <stop offset="100%" stop-color="#fce7f3" />
+    </linearGradient>
+    <linearGradient id="cakePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e8ff" />
+      <stop offset="100%" stop-color="#d8b4fe" />
+    </linearGradient>
+    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#sticker-shadow)">
+    <!-- White Sticker Outline Base -->
+    <!-- Stand / Plate -->
+    <ellipse cx="100" cy="195" rx="86" ry="16" fill="#ffffff" />
+    <path d="M 18,195 Q 18,206 100,206 Q 182,206 182,195 Z" fill="#ffffff" />
+    
+    <!-- Outer Sticker Glow/Backing -->
+    <rect x="26" y="120" width="148" height="70" rx="14" fill="#ffffff" />
+    <rect x="46" y="65" width="108" height="65" rx="12" fill="#ffffff" />
+    
+    <!-- Candle outlines -->
+    <rect x="66" y="30" width="12" height="42" rx="4" fill="#ffffff" />
+    <rect x="94" y="24" width="12" height="48" rx="4" fill="#ffffff" />
+    <rect x="122" y="30" width="12" height="42" rx="4" fill="#ffffff" />
+    <!-- Flame outlines -->
+    <circle cx="72" cy="20" r="9" fill="#ffffff" />
+    <circle cx="100" cy="14" r="10" fill="#ffffff" />
+    <circle cx="128" cy="20" r="9" fill="#ffffff" />
+
+    <!-- Cake Stand Plate -->
+    <ellipse cx="100" cy="194" rx="80" ry="12" fill="url(#plateGrad)" stroke="#cbd5e1" stroke-width="2" />
+    <path d="M 85,198 L 82,210 L 118,210 L 115,198 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- BOTTOM TIER -->
+    <rect x="32" y="126" width="136" height="62" rx="8" fill="url(#cakePurple)" stroke="#c084fc" stroke-width="2" />
+    <!-- Bottom tier frosting scallops -->
+    <path d="M 32,138 Q 49,150 66,138 Q 83,150 100,138 Q 117,150 134,138 Q 151,150 168,138 L 168,126 L 32,126 Z" fill="#f472b6" opacity="0.9" />
+    <path d="M 32,134 Q 49,144 66,134 Q 83,144 100,134 Q 117,144 134,134 Q 151,144 168,134 L 168,126 L 32,126 Z" fill="#ffffff" />
+
+    <!-- Sprinkles on bottom tier -->
+    <rect x="48" y="160" width="8" height="3" rx="1.5" fill="#f59e0b" transform="rotate(25 48 160)" />
+    <rect x="75" y="170" width="8" height="3" rx="1.5" fill="#38bdf8" transform="rotate(-30 75 170)" />
+    <rect x="110" y="162" width="8" height="3" rx="1.5" fill="#ec4899" transform="rotate(45 110 162)" />
+    <rect x="140" y="168" width="8" height="3" rx="1.5" fill="#10b981" transform="rotate(-20 140 168)" />
+    <rect x="92" y="174" width="8" height="3" rx="1.5" fill="#fbbf24" transform="rotate(15 92 174)" />
+    <circle cx="60" cy="176" r="2.5" fill="#ec4899" />
+    <circle cx="125" cy="175" r="2.5" fill="#a855f7" />
+
+    <!-- TOP TIER -->
+    <rect x="52" y="70" width="96" height="58" rx="8" fill="url(#cakeCream)" stroke="#fbcfe8" stroke-width="2" />
+    <!-- Top tier frosting dripping glaze -->
+    <path d="M 52,70 L 148,70 L 148,84 Q 138,98 132,84 Q 124,104 116,84 Q 106,94 100,84 Q 92,106 84,84 Q 74,96 68,84 Q 60,102 52,84 Z" fill="#ec4899" />
+    <path d="M 52,70 L 148,70 L 148,80 Q 138,92 132,80 Q 124,96 116,80 Q 106,88 100,80 Q 92,98 84,80 Q 74,88 68,80 Q 60,94 52,80 Z" fill="#f43f5e" />
+    <path d="M 52,70 L 148,70 L 148,76 Q 138,84 132,76 Q 124,88 116,76 Q 106,82 100,76 Q 92,90 84,76 Q 74,82 68,76 Q 60,86 52,76 Z" fill="#ffffff" />
+
+    <!-- Cherries on top edge -->
+    <circle cx="64" cy="68" r="6" fill="#e11d48" />
+    <circle cx="63" cy="66" r="1.8" fill="#ffffff" opacity="0.8" />
+    <circle cx="136" cy="68" r="6" fill="#e11d48" />
+    <circle cx="135" cy="66" r="1.8" fill="#ffffff" opacity="0.8" />
+
+    <!-- CANDLES -->
+    <!-- Candle 1 (Left - Pink stripes) -->
+    <rect x="70" y="32" width="7" height="38" rx="2" fill="#fce7f3" stroke="#f472b6" stroke-width="1.2" />
+    <line x1="70" y1="40" x2="77" y2="44" stroke="#ec4899" stroke-width="2" />
+    <line x1="70" y1="50" x2="77" y2="54" stroke="#ec4899" stroke-width="2" />
+    <line x1="70" y1="60" x2="77" y2="64" stroke="#ec4899" stroke-width="2" />
+    <!-- Wick & Flame 1 -->
+    <line x1="73.5" y1="32" x2="73.5" y2="26" stroke="#475569" stroke-width="1.5" />
+    <path d="M 73.5,12 C 70,18 70,24 73.5,26 C 77,24 77,18 73.5,12 Z" fill="url(#flameGrad)" />
+
+    <!-- Candle 2 (Center - Yellow/Gold) -->
+    <rect x="96.5" y="26" width="7" height="44" rx="2" fill="#fef9c3" stroke="#eab308" stroke-width="1.2" />
+    <line x1="96.5" y1="36" x2="103.5" y2="40" stroke="#ca8a04" stroke-width="2" />
+    <line x1="96.5" y1="48" x2="103.5" y2="52" stroke="#ca8a04" stroke-width="2" />
+    <line x1="96.5" y1="60" x2="103.5" y2="64" stroke="#ca8a04" stroke-width="2" />
+    <!-- Wick & Flame 2 -->
+    <line x1="100" y1="26" x2="100" y2="20" stroke="#475569" stroke-width="1.5" />
+    <path d="M 100,5 C 96,12 96,18 100,20 C 104,18 104,12 100,5 Z" fill="url(#flameGrad)" />
+
+    <!-- Candle 3 (Right - Blue stripes) -->
+    <rect x="123" y="32" width="7" height="38" rx="2" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="123" y1="40" x2="130" y2="44" stroke="#0284c7" stroke-width="2" />
+    <line x1="123" y1="50" x2="130" y2="54" stroke="#0284c7" stroke-width="2" />
+    <line x1="123" y1="60" x2="130" y2="64" stroke="#0284c7" stroke-width="2" />
+    <!-- Wick & Flame 3 -->
+    <line x1="126.5" y1="32" x2="126.5" y2="26" stroke="#475569" stroke-width="1.5" />
+    <path d="M 126.5,12 C 123,18 123,24 126.5,26 C 130,24 130,18 126.5,12 Z" fill="url(#flameGrad)" />
+  </g>
+</svg>
+

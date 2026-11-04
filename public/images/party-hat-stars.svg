@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" width="100%" height="100%">
+  <defs>
+    <filter id="hatShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#hatShadow)">
+    <!-- Hat Cone -->
+    <path d="M 80,30 L 25,160 Q 80,175 135,160 Z" fill="#6d28d9" stroke="#4c1d95" stroke-width="2" />
+
+    <!-- Yellow Stars on Hat -->
+    <!-- Star 1 -->
+    <path d="M 75,65 L 78,74 L 88,74 L 80,80 L 83,89 L 75,83 L 67,89 L 70,80 L 62,74 L 72,74 Z" fill="#facc15" />
+    <!-- Star 2 -->
+    <path d="M 52,105 L 54,112 L 62,112 L 56,117 L 58,124 L 52,119 L 46,124 L 48,117 L 42,112 L 50,112 Z" fill="#facc15" />
+    <!-- Star 3 -->
+    <path d="M 98,105 L 100,112 L 108,112 L 102,117 L 104,124 L 98,119 L 92,124 L 94,117 L 88,112 L 96,112 Z" fill="#facc15" />
+    <!-- Star 4 -->
+    <path d="M 75,130 L 77,137 L 85,137 L 79,142 L 81,149 L 75,144 L 69,149 L 71,142 L 65,137 L 73,137 Z" fill="#facc15" />
+
+    <!-- Fluffy Golden Tinsel Rim at bottom -->
+    <path d="M 18,160 Q 30,175 45,165 Q 60,180 80,166 Q 100,180 115,165 Q 130,175 142,160 Q 130,150 115,158 Q 100,148 80,158 Q 60,148 45,158 Q 30,150 18,160 Z" fill="#f59e0b" stroke="#d97706" stroke-width="1.5" />
+    <!-- Golden speckles / tinsel -->
+    <circle cx="35" cy="165" r="4" fill="#fef08a" />
+    <circle cx="55" cy="168" r="4" fill="#fef08a" />
+    <circle cx="80" cy="167" r="4.5" fill="#fef08a" />
+    <circle cx="105" cy="168" r="4" fill="#fef08a" />
+    <circle cx="125" cy="165" r="4" fill="#fef08a" />
+
+    <!-- Pom-pom at top -->
+    <circle cx="80" cy="26" r="14" fill="#f59e0b" />
+    <circle cx="78" cy="23" r="10" fill="#fde047" />
+    <circle cx="84" cy="28" r="6" fill="#fef08a" />
+  </g>
+</svg>
+

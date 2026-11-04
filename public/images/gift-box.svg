@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <filter id="giftShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#4a044e" flood-opacity="0.2" />
+    </filter>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff" />
+      <stop offset="100%" stop-color="#f5d0fe" />
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#giftShadow)">
+    <!-- White Sticker Backing -->
+    <rect x="24" y="60" width="112" height="88" rx="14" fill="#ffffff" />
+    <rect x="18" y="44" width="124" height="28" rx="8" fill="#ffffff" />
+    <!-- Bow sticker backing -->
+    <ellipse cx="60" cy="34" rx="22" ry="16" fill="#ffffff" />
+    <ellipse cx="100" cy="34" rx="22" ry="16" fill="#ffffff" />
+    <circle cx="80" cy="38" r="14" fill="#ffffff" />
+
+    <!-- Main Box Body -->
+    <rect x="28" y="64" width="104" height="80" rx="8" fill="url(#boxGrad)" stroke="#e879f9" stroke-width="2" />
+    
+    <!-- Polka dots on box -->
+    <circle cx="45" cy="85" r="4" fill="#d946ef" opacity="0.4" />
+    <circle cx="115" cy="85" r="4" fill="#d946ef" opacity="0.4" />
+    <circle cx="45" cy="125" r="4" fill="#d946ef" opacity="0.4" />
+    <circle cx="115" cy="125" r="4" fill="#d946ef" opacity="0.4" />
+
+    <!-- Vertical Ribbon on Body -->
+    <rect x="70" y="64" width="20" height="80" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1.5" />
+
+    <!-- Box Lid -->
+    <rect x="22" y="48" width="116" height="20" rx="5" fill="url(#boxGrad)" stroke="#e879f9" stroke-width="2" />
+    <rect x="70" y="48" width="20" height="20" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1.5" />
+
+    <!-- Ribbon Loops & Bow -->
+    <!-- Left Loop -->
+    <path d="M 80,40 C 65,18 45,20 48,34 C 50,44 72,40 80,40 Z" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1.5" />
+    <path d="M 74,38 C 65,24 55,26 56,34 C 57,40 70,38 74,38 Z" fill="#ffffff" opacity="0.4" />
+
+    <!-- Right Loop -->
+    <path d="M 80,40 C 95,18 115,20 112,34 C 110,44 88,40 80,40 Z" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1.5" />
+    <path d="M 86,38 C 95,24 105,26 104,34 C 103,40 90,38 86,38 Z" fill="#ffffff" opacity="0.4" />
+
+    <!-- Center Knot -->
+    <ellipse cx="80" cy="40" rx="9" ry="8" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1.5" />
+    <ellipse cx="78" cy="38" rx="4" ry="3" fill="#ffffff" opacity="0.6" />
+
+    <!-- Dangling Ribbon Tails -->
+    <path d="M 75,44 Q 65,65 55,75 Q 62,65 72,50" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1" />
+    <path d="M 85,44 Q 95,65 105,75 Q 98,65 88,50" fill="url(#ribbonGrad)" stroke="#ca8a04" stroke-width="1" />
+  </g>
+</svg>
+

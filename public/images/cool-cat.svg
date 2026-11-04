@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 340" width="100%" height="100%">
+  <defs>
+    <filter id="catShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+    <linearGradient id="partyHatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="sunglassLens" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="60%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="catFur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d6d3d1" />
+      <stop offset="50%" stop-color="#a8a29e" />
+      <stop offset="100%" stop-color="#78716c" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#catShadow)">
+    <!-- White Die-Cut Sticker Outline -->
+    <!-- Head & Ears outline -->
+    <path d="
+      M 140,8
+      L 175,95 L 225,125 C 235,160 238,205 235,250 C 230,290 220,332 140,332 C 60,332 50,290 45,250 C 42,205 45,160 55,125 L 105,95 Z
+    " fill="#ffffff" />
+    <!-- Broad sticker silhouette -->
+    <ellipse cx="140" cy="220" rx="98" ry="105" fill="#ffffff" />
+    <!-- Hat cone outline -->
+    <polygon points="140,6 102,112 178,112" fill="#ffffff" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" />
+
+    <!-- CAT BODY & CHEST -->
+    <ellipse cx="140" cy="255" rx="82" ry="72" fill="url(#catFur)" />
+    <!-- White fur bib/chest -->
+    <path d="M 140,205 Q 165,240 160,290 Q 140,310 120,290 Q 115,240 140,205 Z" fill="#f5f5f4" />
+
+    <!-- CAT HEAD -->
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <polygon points="70,125 105,185 55,175" fill="#78716c" />
+    <polygon points="72,135 98,180 62,172" fill="#fbcfe8" />
+    <!-- Right Ear -->
+    <polygon points="210,125 155,185 225,175" fill="#78716c" />
+    <polygon points="208,135 162,180 218,172" fill="#fbcfe8" />
+
+    <!-- Head Oval -->
+    <ellipse cx="140" cy="190" rx="76" ry="62" fill="url(#catFur)" />
+
+    <!-- Tabby Fur Stripes on Forehead -->
+    <path d="M 140,140 L 140,158 M 128,144 L 132,160 M 152,144 L 148,160 M 116,150 L 122,162 M 164,150 L 158,162" stroke="#44403c" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Tabby Cheeks Stripes -->
+    <path d="M 72,195 L 90,195 M 70,205 L 92,203 M 74,215 L 90,211" stroke="#44403c" stroke-width="2.8" stroke-linecap="round" />
+    <path d="M 208,195 L 190,195 M 210,205 L 188,203 M 206,215 L 190,211" stroke="#44403c" stroke-width="2.8" stroke-linecap="round" />
+
+    <!-- Muzzle & Pink Nose -->
+    <ellipse cx="132" cy="224" rx="14" ry="10" fill="#e7e5e4" />
+    <ellipse cx="148" cy="224" rx="14" ry="10" fill="#e7e5e4" />
+    <polygon points="140,222 134,214 146,214" fill="#fb7185" rx="1" />
+    <path d="M 140,222 L 140,229 Q 132,234 126,229 M 140,229 Q 148,234 154,229" stroke="#44403c" stroke-width="1.8" fill="none" />
+
+    <!-- Whiskers -->
+    <line x1="125" y1="225" x2="65" y2="220" stroke="#ffffff" stroke-width="1.8" opacity="0.8" />
+    <line x1="124" y1="228" x2="60" y2="232" stroke="#ffffff" stroke-width="1.8" opacity="0.8" />
+    <line x1="125" y1="231" x2="68" y2="242" stroke="#ffffff" stroke-width="1.8" opacity="0.8" />
+    <line x1="155" y1="225" x2="215" y2="220" stroke="#ffffff" stroke-width="1.8" opacity="0.8" />
+    <line x1="156" y1="228" x2="220" y2="232" stroke="#ffffff" stroke-width="1.8" opacity="0.8" />
+    <line x1="155" y1="231" x2="212" y2="242" stroke="#ffffff" stroke-width="1.8" opacity="0.8" />
+
+    <!-- COOL YELLOW SUNGLASSES -->
+    <!-- Frame Outline -->
+    <!-- Left Lens -->
+    <path d="M 85,170 C 85,160 130,160 130,178 C 130,198 90,202 85,178 Z" fill="url(#sunglassLens)" stroke="#1c1917" stroke-width="5" />
+    <!-- Right Lens -->
+    <path d="M 195,170 C 195,160 150,160 150,178 C 150,198 190,202 195,178 Z" fill="url(#sunglassLens)" stroke="#1c1917" stroke-width="5" />
+    <!-- Bridge -->
+    <line x1="130" y1="172" x2="150" y2="172" stroke="#1c1917" stroke-width="5.5" />
+    <!-- Sunglass frame wing tips -->
+    <line x1="85" y1="170" x2="72" y2="166" stroke="#1c1917" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="195" y1="170" x2="208" y2="166" stroke="#1c1917" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Sunglass Glass Reflection Flares -->
+    <line x1="95" y1="170" x2="105" y2="188" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.75" />
+    <line x1="102" y1="168" x2="110" y2="182" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+    <line x1="160" y1="170" x2="170" y2="188" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.75" />
+    <line x1="167" y1="168" x2="175" y2="182" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+
+    <!-- PARTY CONE HAT (Red & Yellow Stripes) -->
+    <polygon points="140,16 108,110 172,110" fill="url(#partyHatGrad)" stroke="#991b1b" stroke-width="2" />
+    <!-- Yellow chevron stripes -->
+    <path d="M 115,95 L 140,84 L 165,95 L 168,103 L 140,92 L 112,103 Z" fill="#facc15" />
+    <path d="M 122,70 L 140,62 L 158,70 L 160,76 L 140,68 L 120,76 Z" fill="#facc15" />
+    <path d="M 130,45 L 140,40 L 150,45 L 152,50 L 140,45 L 128,50 Z" fill="#facc15" />
+    <!-- Pom-pom on hat tip -->
+    <circle cx="140" cy="14" r="8" fill="#facc15" stroke="#eab308" stroke-width="1.5" />
+    <circle cx="140" cy="14" r="4" fill="#fef08a" />
+
+    <!-- Front Cat Paws Resting on Bottom -->
+    <ellipse cx="105" cy="305" rx="18" ry="12" fill="#e7e5e4" stroke="#d6d3d1" stroke-width="1.5" />
+    <ellipse cx="175" cy="305" rx="18" ry="12" fill="#e7e5e4" stroke="#d6d3d1" stroke-width="1.5" />
+  </g>
+</svg>
+

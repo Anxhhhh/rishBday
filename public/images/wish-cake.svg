@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <!-- Halftone crosshatch pattern for vintage print effect -->
+    <pattern id="halftoneDots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#292524" opacity="0.85" />
+    </pattern>
+    <pattern id="denseDots" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="2.5" r="1.8" fill="#1c1917" opacity="0.9" />
+    </pattern>
+    <linearGradient id="candleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="35%" stop-color="#b91c1c" />
+      <stop offset="70%" stop-color="#991b1b" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="75%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.45" />
+      <stop offset="80%" stop-color="#ea580c" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <g filter="drop-shadow(0 10px 18px rgba(0,0,0,0.18))">
+    <!-- STAR TOPPERS (Sticks & Stars) -->
+    <!-- Star 1 (Far Left) -->
+    <line x1="140" y1="210" x2="120" y2="155" stroke="#44403c" stroke-width="2" />
+    <polygon points="120,135 125,148 139,148 128,157 132,170 120,162 108,170 112,157 101,148 115,148" fill="#b91c1c" stroke="#991b1b" stroke-width="1.5" />
+
+    <!-- Star 2 (Inner Left) -->
+    <line x1="170" y1="205" x2="160" y2="140" stroke="#44403c" stroke-width="2" />
+    <polygon points="160,122 165,135 178,135 167,144 171,157 160,149 149,157 153,144 142,135 155,135" fill="#dc2626" stroke="#991b1b" stroke-width="1.5" />
+
+    <!-- Star 3 (Inner Right) -->
+    <line x1="230" y1="205" x2="240" y2="140" stroke="#44403c" stroke-width="2" />
+    <polygon points="240,122 245,135 258,135 247,144 251,157 240,149 229,157 233,144 222,135 235,135" fill="#dc2626" stroke="#991b1b" stroke-width="1.5" />
+
+    <!-- Star 4 (Far Right) -->
+    <line x1="260" y1="210" x2="280" y2="155" stroke="#44403c" stroke-width="2" />
+    <polygon points="280,135 285,148 299,148 288,157 292,170 280,162 268,170 272,157 261,148 275,148" fill="#b91c1c" stroke="#991b1b" stroke-width="1.5" />
+
+    <!-- CANDLE -->
+    <!-- Candle Body -->
+    <rect x="190" y="125" width="20" height="95" rx="3" fill="url(#candleGrad)" stroke="#7f1d1d" stroke-width="1.5" />
+    <!-- Diagonal candy stripes on candle -->
+    <path d="M 190,140 L 210,130 L 210,138 L 190,148 Z" fill="#ffffff" opacity="0.85" />
+    <path d="M 190,160 L 210,150 L 210,158 L 190,168 Z" fill="#ffffff" opacity="0.85" />
+    <path d="M 190,180 L 210,170 L 210,178 L 190,188 Z" fill="#ffffff" opacity="0.85" />
+    <path d="M 190,200 L 210,190 L 210,198 L 190,208 Z" fill="#ffffff" opacity="0.85" />
+
+    <!-- Candle Wick -->
+    <line x1="200" y1="125" x2="200" y2="110" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- CANDLE FLAME (with class for toggling) -->
+    <g id="candle-flame" class="cursor-pointer">
+      <!-- Glow aura -->
+      <circle cx="200" cy="78" r="42" fill="url(#flameGlow)" />
+      
+      <!-- Outer Flame -->
+      <path d="M 200,32 C 182,60 184,86 195,104 C 197,108 203,108 205,104 C 216,86 218,60 200,32 Z" fill="url(#flameGrad)" filter="drop-shadow(0 0 10px #f59e0b)" />
+      
+      <!-- Inner Core Flame -->
+      <path d="M 200,52 C 192,70 193,86 198,96 C 199,98 201,98 202,96 C 207,86 208,70 200,52 Z" fill="#ffffff" />
+    </g>
+
+    <!-- CAKE BODY (Halftone Textured Print) -->
+    <!-- Base Plate/Shadow -->
+    <ellipse cx="200" cy="385" rx="140" ry="25" fill="#e7e5e4" />
+
+    <!-- Bottom Cake Layer -->
+    <path d="M 75,270 C 75,300 75,340 85,370 C 105,395 295,395 315,370 C 325,340 325,300 325,270 Z" fill="#fafaf9" />
+    <!-- Halftone dots texture fill -->
+    <path d="M 75,270 C 75,300 75,340 85,370 C 105,395 295,395 315,370 C 325,340 325,300 325,270 Z" fill="url(#halftoneDots)" />
+    
+    <!-- Red bottom border accent -->
+    <path d="M 85,370 C 115,395 285,395 315,370 L 322,378 C 290,405 110,405 78,378 Z" fill="#dc2626" />
+
+    <!-- Red middle layer stripe -->
+    <path d="M 78,310 C 120,335 280,335 322,310 L 324,324 C 280,350 120,350 76,324 Z" fill="#dc2626" />
+    <path d="M 78,312 C 120,337 280,337 322,312" stroke="#b91c1c" stroke-width="3" fill="none" />
+
+    <!-- Outer Cake Contour -->
+    <path d="M 75,260 C 75,300 75,340 85,370 C 105,395 295,395 315,370 C 325,340 325,300 325,260" stroke="#b91c1c" stroke-width="4" fill="none" stroke-linecap="round" />
+
+    <!-- TOP WHITE FROSTING WITH DRIPPING ACCENTS -->
+    <!-- Red under-frosting drip shadow -->
+    <path d="
+      M 70,250
+      C 65,260 70,275 80,270
+      C 90,295 105,295 115,275
+      C 125,305 145,305 155,275
+      C 165,310 185,315 195,280
+      C 205,320 225,320 235,280
+      C 245,305 265,305 275,275
+      C 285,295 305,290 315,270
+      C 325,275 332,260 330,248
+      C 328,215 72,215 70,250 Z
+    " fill="#b91c1c" />
+
+    <!-- White Top Frosting Cap -->
+    <ellipse cx="200" cy="245" rx="128" ry="38" fill="#ffffff" stroke="#e5e5e5" stroke-width="2" />
+    <path d="
+      M 72,246
+      C 68,256 72,270 82,265
+      C 92,288 106,288 116,270
+      C 126,298 144,298 154,270
+      C 164,302 184,306 194,274
+      C 204,310 224,310 234,274
+      C 244,298 264,298 274,270
+      C 284,288 302,284 312,265
+      C 322,270 328,256 326,244
+      C 310,275 90,275 72,246 Z
+    " fill="#ffffff" stroke="#b91c1c" stroke-width="2.5" />
+
+    <!-- Sprinkle dots on white frosting top -->
+    <circle cx="130" cy="235" r="3" fill="#292524" />
+    <circle cx="170" cy="248" r="3.5" fill="#292524" />
+    <circle cx="215" cy="252" r="3" fill="#292524" />
+    <circle cx="255" cy="242" r="3.5" fill="#292524" />
+    <circle cx="150" cy="256" r="2.5" fill="#dc2626" />
+    <circle cx="230" cy="238" r="2.5" fill="#dc2626" />
+    <circle cx="190" cy="234" r="3" fill="#292524" />
+    <circle cx="270" cy="250" r="2.5" fill="#292524" />
+    <circle cx="110" cy="245" r="2.5" fill="#dc2626" />
+    <circle cx="290" cy="240" r="3" fill="#dc2626" />
+  </g>
+</svg>
+
